@@ -46,7 +46,7 @@ class CreatePost extends Component {
             type="text"
             name="author"
             placeholder='Your name'
-            value={this.state.value} />
+            value={this.state.author} />
 
           <label htmlFor='title'>Post Title</label>
           <input
@@ -54,14 +54,14 @@ class CreatePost extends Component {
             type="text"
             name="title"
             placeholder='A title'
-            value={this.state.value} />
+            value={this.state.title} />
 
           <label htmlFor='blogPost'>Write your blogPost</label>
           <textarea
             onChange={(event) => this.updateField('blogPost', event.target.value)}
             name="blogPost"
             rows="7" cols="80"
-            value={this.state.value}
+            value={this.state.blogPost}
             placeholder="Type here.."></textarea>
           <button type='submit'>Submit</button>
         </form>
