@@ -8,6 +8,8 @@ import NavBar from './components/NavBar';
 import PostList from './components/PostList';
 import ShowPost from './components/ShowPost';
 
+import './globalStyles.css';
+
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(

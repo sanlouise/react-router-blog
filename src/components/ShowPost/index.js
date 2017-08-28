@@ -29,10 +29,10 @@ class ShowPost extends Component {
 
   render() {
     return (
-      <div className="">
+      <div className="center">
         <h1>{this.state.title}</h1>
         <p className="author">{this.state.author}</p>
-        <p>{this.state.blogPost}</p>
+        <p>Written by: {this.state.blogPost}</p>
       </div>
     )
   }

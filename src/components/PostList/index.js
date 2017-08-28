@@ -21,16 +21,25 @@ export default class PostList extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.posts.map((post) => {
-          const url = `/posts/${post._id}`
-          return(
-            <div className="post" key={post._id}>
-              <h1><Link to={url}>{post.title}</Link></h1>
+      <div className="row">
+        {this.state.posts.map((post) => (
+          <div className="col s12 m6" key={post._id}>
+            <div className="card pink lighten-4">
+              <div className="card-content white-text">
+                <span className="card-title"><Link to={`/posts/${post._id}`}>{post.title}</Link></span>
+                <p>{post.blogPost}</p>
+              </div>
+              <div className="card-action">
+                <p>Written by: {post.author}</p>
+              </div>
             </div>
-          )
-        })}
+          </div>
+        ))}
       </div>
-    )
-  }
+    )}
+
+
+
+
+
 }
