@@ -17,8 +17,8 @@ ReactDOM.render(
         <Switch>
           <Route path="/new" component={CreatePost}/>
           <Route path="/index" component={PostList}/>
-          <Route path="/show" component={ShowPost}/>
-          <Route path="/" component={App}/>
+          <Route exact path="/posts/:id" component={ShowPost}/>
+          <Route exact path="/" component={App}/>
         </Switch>
       </NavBar>
     </BaseLayout>
